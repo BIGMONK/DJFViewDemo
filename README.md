@@ -12,6 +12,7 @@ app:GifScaleType="center"   居中缩小
 app:GifScaleType="centerCrop"   居中拉伸裁切
 
 ###控件
+
         <com.djf.djfview.GifImageView
             android:id="@+id/giv"
             android:layout_width="200dp"
