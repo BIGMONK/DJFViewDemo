@@ -44,7 +44,7 @@ app:GifScaleType="centerCrop"   居中拉伸裁切
             
 ###效果图
 
-![Image text](https://github.com/BIGMONK/DJFViewDemo/001.gif)
+![Image text](https://github.com/BIGMONK/DJFViewDemo/blob/master/001.gif)
 
 
 
