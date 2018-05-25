@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.djf.djfviewdemo.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.djf.djfview.GifImageView
+            android:id="@+id/giv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            app:GifScaleType="fixXY"
+            app:gif_src="@drawable/meiiz" />
+
+        <com.djf.djfview.GifImageView
+            android:id="@+id/giv2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimaryDark"
+            app:GifScaleType="center"
+            app:gif_src="@drawable/meiiz" />
+
+        <com.djf.djfview.GifImageView
+            android:id="@+id/giv3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            app:GifScaleType="centerCrop"
+            app:gif_src="@drawable/meiiz" />
+
+        <com.djf.djfview.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:gif_src="@drawable/meiiz" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.djf.djfview.BorderedImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/meiiz"
+            app:borderColor="@color/colorPrimaryDark"
+            app:borderWidth="2px"
+            app:corner="80px"
+            app:leftTopCorner="200px"
+            app:rightBottomCornet="200px"
+            app:shap="rectangle" />
+
+        <com.djf.djfview.SBorderedImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:src="@drawable/meiiz"
+            app:cborderWidth="1px"
+            app:ccorner="100px"
+            app:crightBottomCornet="0px"
+            app:cshap="rectangle"
+            app:scaleType="centerCrop" />
+
+        <com.djf.djfview.SBorderedImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:src="@drawable/meiiz"
+            app:cborderWidth="1px"
+            app:ccorner="200px"
+            app:crightBottomCornet="200px"
+            app:cshap="circle"
+            app:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
