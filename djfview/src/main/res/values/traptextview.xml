@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TrapTextView">
+        <attr name="ttv_swrok_width" format="dimension" />
+        <attr name="ttv_strok_color" format="color" />
+        <attr name="ttv_leftTopXPadding" format="dimension" />
+        <attr name="ttv_leftTopYPadding" format="dimension" />
+        <attr name="ttv_rightTopXPadding" format="dimension" />
+        <attr name="ttv_rightTopYPadding" format="dimension" />
+        <attr name="ttv_leftBottomXPadding" format="dimension" />
+        <attr name="ttv_leftBottomYPadding" format="dimension" />
+        <attr name="ttv_rightBottomXPadding" format="dimension" />
+        <attr name="ttv_rightBottomYPadding" format="dimension" />
+        <attr name="ttv_innerBackground" format="reference" />
+    </declare-styleable>
+</resources>
