@@ -19,7 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-
+        jcenter(){ url 'http://jcenter.bintray.com/'} //JCenter下载慢测试
         //审核前的私有仓库
         maven { url  "https://dl.bintray.com/djf/maven" }
     }

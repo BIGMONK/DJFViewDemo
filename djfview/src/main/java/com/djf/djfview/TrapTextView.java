@@ -92,7 +92,7 @@ public class TrapTextView extends android.support.v7.widget.AppCompatTextView {
         paintSolid.setFilterBitmap(true);
         clipPath = new Path();
 
-        strokWidth /= 1f;
+        strokWidth = 0f;//好像不该添加偏移
     }
 
     @Override
@@ -102,14 +102,13 @@ public class TrapTextView extends android.support.v7.widget.AppCompatTextView {
 
     @Override
     public void draw(Canvas canvas) {
+        super.draw(canvas);
         clipPath.reset();
         clipPath.moveTo(leftTopXPadding + strokWidth, leftTopYPadding + strokWidth);
         clipPath.lineTo(viewWidth - rightTopXPadding - strokWidth, rightTopYPadding + strokWidth);
-        clipPath.lineTo(viewWidth - rightBottomXPadding - strokWidth, viewHeigh - rightBottomYPadding - +strokWidth);
+        clipPath.lineTo(viewWidth - rightBottomXPadding - strokWidth, viewHeigh - rightBottomYPadding - strokWidth);
         clipPath.lineTo(leftBottomXPadding + strokWidth, viewHeigh - leftBottomYPadding - strokWidth);
         clipPath.close();
-
-
         if (innerBackground instanceof ColorDrawable) {
             paintSolid.setColor(((ColorDrawable) innerBackground).getColor());
             canvas.drawPath(clipPath, paintSolid);
@@ -144,7 +143,6 @@ public class TrapTextView extends android.support.v7.widget.AppCompatTextView {
 //        );
 
 
-        super.draw(canvas);
     }
 
 //    private Drawable background;

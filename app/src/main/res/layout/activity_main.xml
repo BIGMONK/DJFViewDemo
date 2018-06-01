@@ -43,6 +43,19 @@
             android:background="@color/colorPrimaryDark"
             app:gif_src="@drawable/meiiz" />
 
+        <com.djf.djfview.TrapTextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            app:ttv_innerBackground="@drawable/meiiz"
+            app:ttv_leftTopXPadding="30px"
+            app:ttv_rightTopXPadding="30px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:background="#009900"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@color/colorAccent"></com.djf.djfview.TrapTextView>
+
     </LinearLayout>
 
     <LinearLayout
@@ -82,15 +95,7 @@
             app:cshap="circle"
             app:scaleType="centerCrop" />
 
-        <com.djf.djfview.TrapTextView
-            android:layout_width="200px"
-            android:layout_height="200px"
-            app:ttv_innerBackground="@drawable/meiiz"
-            app:ttv_leftTopXPadding="10px"
-            app:ttv_rightTopXPadding="10px"
-            android:gravity="center"
-            android:text="0.0"
-            android:textColor="@color/colorAccent"></com.djf.djfview.TrapTextView>
+
 
     </LinearLayout>
 

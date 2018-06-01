@@ -5,7 +5,7 @@ apply plugin: 'com.novoda.bintray-release'
 ext {// ext is a gradle closure allowing the declaration of global properties
     PUBLISH_GROUP_ID = 'com.djf'
     PUBLISH_ARTIFACT_ID = 'djfview'
-    PUBLISH_VERSION = "1.0.1"
+    PUBLISH_VERSION = "1.0.3"
 }
 
 // 3.maven-输出路径
@@ -36,10 +36,10 @@ artifacts {
 publish {
     repoName="djfview"//仓库名
     userOrg = 'djf'      //bintray注册的用户名
-    groupId = 'com.djf'         //compile引用时的第1部分groupId
-    artifactId = 'djfview'     //compile引用时的第2部分项目名
-    publishVersion = '1.0.1'    //compile引用时的第3部分版本号
-    desc = 'This is a library '//d项目描述
+    groupId =project.PUBLISH_GROUP_ID         //compile引用时的第1部分groupId
+    artifactId = project.PUBLISH_ARTIFACT_ID    //compile引用时的第2部分项目名
+    publishVersion = project.PUBLISH_VERSION    //compile引用时的第3部分版本号
+    desc = 'This is a library for some custom view'//d项目描述
     repoName="maven" //你的仓库名称，没有填写默认仓库是maven//这也是很多人上传仓库不对名问题最多情况，
     website = 'https://github.com/BIGMONK/DJFViewDemo' //github 托管地址
 }

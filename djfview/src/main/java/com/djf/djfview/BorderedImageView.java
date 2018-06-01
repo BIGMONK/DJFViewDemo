@@ -83,7 +83,7 @@ public class BorderedImageView extends AppCompatImageView {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        clipPath.reset();
+//        clipPath.reset();
         if (shap == 2) {
             if (clipPath != null) {
 //                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
