@@ -4,12 +4,16 @@
 修复TrapTextView文字被覆盖的异常
 
 #1.0.3
+
 ##TrapTextView
 修复自定义背景和原背景冲突，环线偏移调整
 
-#1.0.2
-增加一个自定义TextView，内部可添加闭环线条，并可在环线内添加背景
-##TrapTextView
+#1.0.2  
+
+增加一个自定义TextView，内部可添加闭环线条，并可在环线内添加背景  
+
+##TrapTextView  
+
 ![Image text](https://github.com/BIGMONK/DJFViewDemo/blob/master/002.jpg)
 
 
