@@ -53,7 +53,7 @@
             android:layout_marginTop="20px"
             android:background="#009900"
             android:gravity="center"
-            android:text="0.0"
+            android:text="0+.+0"
             android:textColor="@color/colorAccent"></com.djf.djfview.TrapTextView>
 
     </LinearLayout>

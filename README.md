@@ -1,5 +1,8 @@
 # DJFView
 
+#1.0.4  
+修复TrapTextView文字被覆盖的异常
+
 #1.0.3
 ##TrapTextView
 修复自定义背景和原背景冲突，环线偏移调整

@@ -97,12 +97,6 @@ public class TrapTextView extends android.support.v7.widget.AppCompatTextView {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-    }
-
-    @Override
-    public void draw(Canvas canvas) {
-        super.draw(canvas);
         clipPath.reset();
         clipPath.moveTo(leftTopXPadding + strokWidth, leftTopYPadding + strokWidth);
         clipPath.lineTo(viewWidth - rightTopXPadding - strokWidth, rightTopYPadding + strokWidth);
@@ -141,8 +135,13 @@ public class TrapTextView extends android.support.v7.widget.AppCompatTextView {
 //                leftTopXPadding + strokWidth, leftTopYPadding + strokWidth,
 //                paintStrok
 //        );
+        super.onDraw(canvas);
+    }
 
+    @Override
+    public void draw(Canvas canvas) {
 
+        super.draw(canvas);
     }
 
 //    private Drawable background;
